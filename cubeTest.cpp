@@ -11,7 +11,6 @@ protected:
 	
 
 	CubeTest() : unsolvedCube(unsolvedCorners, unsolvedEdges) {
-
 	}
 
 	virtual void SetUp() {
@@ -26,9 +25,9 @@ public:
 		unsolvedEdges[12] = {10, 6, 16, 9, 14, 8, 4, 11, 12, 18, 2, 20};
 };
 constexpr int CubeTest::
-	unsolvedCorners[8];// = {17, 1, 13, 19, 5, 7, 15, 3};
+	unsolvedCorners[8]; // = {17, 1, 13, 19, 5, 7, 15, 3};
 constexpr int CubeTest:: 
-	unsolvedEdges[12];// = {10, 6, 16, 9, 14, 8, 4, 11, 12, 18, 2, 20};
+	unsolvedEdges[12]; // = {10, 6, 16, 9, 14, 8, 4, 11, 12, 18, 2, 20};
 
 
 TEST_F(CubeTest, CheckMemberVariablesAfterConstruction) {
@@ -355,52 +354,3 @@ TEST_F(CubeTest, CheckAllRightFunctions) {
 	solvedCube.turnRight2();
 	EXPECT_TRUE(solvedCube.isSolved());
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-TEST_F(CubeTest, CheckMoveThenI) {
-}
-
-TEST_F(CubeTest, CheckIThenMove) {
-}
-
-TEST_F(CubeTest, CheckMoveTwo) {
-}
-
-TEST_F(CubeTest, CheckMove360Quarter) {
-}
-
-TEST_F(CubeTest, CheckMoveInverse360Quarter) {
-}
-
-TEST_F(CubeTest, CheckMove360Half) {
-}
-*/
